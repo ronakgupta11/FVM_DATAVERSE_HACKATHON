@@ -1,6 +1,7 @@
 
 import Head from "next/head";
 import { HomeView } from "../views";
+import PostCard from "@/components/PostCard";
 
 const Home = (props) => {
   return (
@@ -13,6 +14,7 @@ const Home = (props) => {
         />
       </Head>
       <HomeView />
+      <PostCard/>
     </div>
   );
 };
