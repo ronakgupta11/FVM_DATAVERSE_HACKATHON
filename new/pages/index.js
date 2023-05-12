@@ -1,13 +1,20 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+import Head from "next/head";
+import { HomeView } from "../views";
 
-
-export default function Home() {
+const Home = (props) => {
   return (
-    <main>
-      Hello world
-    </main>
-  )
-}
+    <div>
+      <Head>
+        <title>Gari vNFT</title>
+        <meta
+          name="description"
+          content="Solana Scaffold"
+        />
+      </Head>
+      <HomeView />
+    </div>
+  );
+};
+
+export default Home;
